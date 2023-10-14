@@ -40,7 +40,7 @@ function Dashboard({}: Props) {
     <div className="">
       <div className="flex">
         <Sidebar />
-        <div className="bg-[#f9f9f9] w-full h-screen">
+        <div className="bg-[#f9f9f9] h-screen w-10/12">
           <div>
             <Navbar />
           </div>
@@ -50,7 +50,7 @@ function Dashboard({}: Props) {
               <Image
                 src={hotelHeroImg}
                 alt="Hotel-image"
-                className="rounded-lg w-full h-[300px]"
+                className="rounded-lg w-full h-[300px] object-cover"
               />
               <div className="bg-[#ffffff] w-[80%] left-[10%] absolute -bottom-6 rounded-lg p-2">
                 <div className="flex items-center gap-x-12 px-4">

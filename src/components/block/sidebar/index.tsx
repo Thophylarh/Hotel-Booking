@@ -9,9 +9,6 @@ import { MdAddCircle } from "react-icons/md";
 import { MdOutlineLogout } from "react-icons/md";
 import { AvatarImg } from "@/assets/jpg";
 
-
-type Props = {};
-
 const sidebarItems = [
   {
     id: 0,
@@ -40,10 +37,10 @@ const sidebarItems = [
   },
 ];
 
-function Sidebar({}: Props) {
+function Sidebar() {
   return (
     <main className="max-h-screen lg:block overflow-y-scroll bg-[#fff] min-w-[250px] py-4">
-      <div className="logo  flex flex-col items-center">
+      <div className="logo  flex flex-col items-center  justify-between">
         <div className="">
           <div className="mx-auto flex flex-col items-center space-y-4">
             <h2 className="text-[#1a1b22] text-2xl font-bold">
@@ -67,27 +64,25 @@ function Sidebar({}: Props) {
         </div>
         <div className="nav-content ">
           <div className="py-20">
-          <div className="space-y-5 ">
-            {sidebarItems.map(({ icon, title, id }) => (
-              <div key={id} className="flex items-center gap-x-4">
-                <div className="text-[#919191]">{icon}</div>
-
-                <p className="text-[#919191]">{title}</p>
+            <div className="space-y-5 ">
+              {sidebarItems.map(({ icon, title, id }) => (
+                <div
+                  key={id}
+                  className="flex items-center gap-x-2 text-sm text-[#919191]"
+                >
+                  <div>{icon}</div>
+                  <p className="">{title}</p>
+                </div>
+              ))}
+            </div>
+            <div className="logout flex items-center gap-x-4 absolute bottom-8 text-sm text-[#919191]">
+              <div className="">
+                <MdOutlineLogout />
               </div>
-            ))}
+              <p className="">Logout</p>
+            </div>
           </div>
-        
-          </div>
-          <div className="logout flex items-center gap-x-4 last:mb-0">
-          <div className="text-[#919191]">
-            <MdOutlineLogout />
-          </div>
-
-          <p className="text-[#919191]">Logout</p>
         </div>
-        
-        </div>
-       
       </div>
     </main>
   );

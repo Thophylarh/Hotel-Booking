@@ -90,16 +90,20 @@ function Destinations({}: Props) {
   return (
     <div className="p-4">
       <h3>Trending destinations</h3>
-      <div className="swiper-container">
-        <div className="swiper-button image-swiper-button-next">
-          <MdKeyboardArrowRight />
-        </div>
-        <div className="swiper-button image-swiper-button-prev">
+      <div className="swiper-container relative">
+        <div className="flex items-center gap-x-2 py-6 ">
+        <div className="swiper-button image-swiper-button-prev border w-6 h-6 rounded-md flex items-center justify-center text-[#919191] absolute right-10">
           <MdKeyboardArrowLeft />
         </div>
+        <div className="swiper-button image-swiper-button-next border w-6 h-6 rounded-md flex items-center justify-center text-[#919191] absolute right-0 ">
+          <MdKeyboardArrowRight />
+        </div>
+       
+        </div>
+       
         <Swiper
           modules={[A11y, Navigation]}
-          slidesPerView={2}
+          slidesPerView={3}
           autoplay
           navigation={{
             nextEl: ".image-swiper-button-next",
@@ -121,42 +125,38 @@ function Destinations({}: Props) {
             },
           }}
         >
-         <SwiperSlide className="swiper-slide">
-  <div className=" space-x-4 p-4 transition-transform duration-300 cursor-pointer interview-container hover:scale-105 card-bg">
-    <div className="relative flex items-center justify-center h-full">
-    {destinationsData.map(
-      ({
-        id,
-        image,
-        location,
-        content,
-        starIcon,
-        ratings,
-        price,
-      }) => (
-        <div className="flex items-center gap-x-8" key={id}>
-          <Image
-            src={image}
-            alt="destination-image"
-            className="w-40 h-40 rounded-lg"
-          />
-          <div className="text-center">
-            <h5>{location}</h5>
-            <div className="flex items-center justify-center">
-              <div className="text-[#f59f00]">{starIcon}</div>
-              <p>{ratings}</p>
-            </div>
-            <p>{content}</p>
-            <p>{price}</p>
-          </div>
-        </div>
-      )
-    )}
-    </div>
-   
-  </div>
-</SwiperSlide>
+          {destinationsData.map(
+            ({ id, content, image, ratings, starIcon, price, location }) => (
+              <SwiperSlide className="swiper-slider !w-fit" key={id}>
+                <div className="">
+                  <div className="bg-white rounded-lg border flex w-fit gap-x-4 p-4">
+                    <div className="relative w-20 h-20 rounded-lg border">
+                      <Image
+                        src={image}
+                        alt="img"
+                        className="absolute object-cover w-full h-full rounded-lg"
+                      />
+                    </div>
+                    <div className="flex flex-col justify-between">
+                      <div className="flex items-center justify-between ">
+                        <h5>{location}</h5>
+                        <div className="gap-x-2 flex items-center">
+                        <div className="text-[#f59f00]">{starIcon}</div>
+                        <p>{ratings}</p>
+                        </div>
+                       
+                      </div>
 
+                      <p className="text-xs">{content}</p>
+                      <p>{price}</p>
+                    </div>
+                  </div>
+                </div>
+               
+                 
+              </SwiperSlide>
+            )
+          )}
         </Swiper>
       </div>
     </div>
