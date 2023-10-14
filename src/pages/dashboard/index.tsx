@@ -7,6 +7,7 @@ import { CiLocationOn } from "react-icons/ci";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { AiFillSchedule } from "react-icons/ai";
 import { BsFillPersonFill } from "react-icons/bs";
+import Destinations from "../destinations";
 
 const selectData = [
   {
@@ -77,6 +78,10 @@ function Dashboard({}: Props) {
                 </div>
               </div>
             </div>
+          </section>
+          {/* section 2 */}
+          <section className="py-10">
+            <Destinations/>
           </section>
         </div>
       </div>
