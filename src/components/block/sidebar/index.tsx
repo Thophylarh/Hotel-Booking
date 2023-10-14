@@ -7,7 +7,8 @@ import { AiOutlineHeart } from "react-icons/ai";
 import { AiOutlineSetting } from "react-icons/ai";
 import { MdAddCircle } from "react-icons/md";
 import { MdOutlineLogout } from "react-icons/md";
-import AvatarImg from "../../../assets/jpg/avatar.jpg";
+import { AvatarImg } from "@/assets/jpg";
+
 
 type Props = {};
 
