@@ -45,7 +45,7 @@ function Sidebar() {
       <div className="logo  flex flex-col items-center  justify-between">
         <div className="">
           <div className="mx-auto flex flex-col items-center space-y-4">
-            <h2 className="text-[#1a1b22] text-2xl font-bold ">
+            <h2 className="text-[#424458] text-2xl font-bold ">
               Mima <span className="text-[#636363]">Booking</span>{" "}
             </h2>
             <div className="relative">

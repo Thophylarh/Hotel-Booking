@@ -41,7 +41,7 @@ function Dashboard({}: Props) {
     <div className="">
       <div className="flex">
         <Sidebar />
-        <div className="bg-[#f9f9f9] h-auto w-10/12">
+        <div className="bg-[#f9f9f9] h-full w-10/12 overflow-hidden">
           <div>
             <Navbar />
           </div>

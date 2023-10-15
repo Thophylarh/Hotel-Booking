@@ -17,7 +17,7 @@ body {
 
 @layer components {
   .swiper-button:hover {
-    background-color: #2b3051;
+    background-color: #424458;
     color: white;
   }
 }
