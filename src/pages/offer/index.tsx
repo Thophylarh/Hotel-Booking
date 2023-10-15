@@ -74,7 +74,7 @@ function BestOffer() {
         <h5 className="text-[#1a1b22] text-xl font-medium">Best Offer</h5>
         <p className="text-sm">View All</p>
       </div>
-      <div className="grid sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-x-2">
+      <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-x-2 gap-y-2 md:gap-y-0">
         {bestOfferData.map(
           ({
             id,
