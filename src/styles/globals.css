@@ -20,4 +20,7 @@ body {
     background-color: #424458;
     color: white;
   }
+  .dashboard-container{
+    @apply bg-[#822121] ;
+  }
 }

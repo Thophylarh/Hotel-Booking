@@ -41,7 +41,7 @@ function Dashboard({}: Props) {
     <div className="">
       <div className="flex">
         <Sidebar />
-        <div className="bg-[#f9f9f9] h-full w-10/12 overflow-hidden">
+        <div className="dashboard-container h-full w-10/12 ">
           <div>
             <Navbar />
           </div>
@@ -86,7 +86,7 @@ function Dashboard({}: Props) {
             <Destinations />
           </section>
           {/* section 2 */}
-          <section className="py-2">
+          <section className="pt-2">
             <BestOffer />
           </section>
         </div>
