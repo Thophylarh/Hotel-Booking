@@ -77,7 +77,7 @@ function Sidebar() {
                 </div>
               ))}
             </div>
-            <div className="logout flex items-center gap-x-4 absolute bottom-8 text-sm text-[#919191] hover:text-[#1a1b22] cursor-pointer">
+            <div className="logout flex items-center gap-x-4 absolute bottom-0 text-sm text-[#919191] hover:text-[#1a1b22] cursor-pointer">
               <div className="">
                 <MdOutlineLogout />
               </div>
