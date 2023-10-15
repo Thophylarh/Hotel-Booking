@@ -5,9 +5,10 @@ import { TbGridDots } from "react-icons/tb";
 import { BsFillTicketDetailedFill } from "react-icons/bs";
 import { AiOutlineHeart } from "react-icons/ai";
 import { AiOutlineSetting } from "react-icons/ai";
-import { MdAddCircle } from "react-icons/md";
+import { RiEditCircleFill } from "react-icons/ri";
 import { MdOutlineLogout } from "react-icons/md";
 import { AvatarImg } from "@/assets/jpg";
+import { useRouter } from "next/router";
 
 const sidebarItems = [
   {
@@ -38,6 +39,7 @@ const sidebarItems = [
 ];
 
 function Sidebar() {
+  const router = useRouter();
   return (
     <main className="max-h-screen lg:block overflow-y-scroll bg-[#fff] min-w-[250px] py-4">
       <div className="logo  flex flex-col items-center  justify-between">
@@ -55,7 +57,7 @@ function Sidebar() {
                 />
               </div>
               <div className="absolute -bottom-3 left-8">
-                <MdAddCircle size={20} />
+                <RiEditCircleFill size={20} />
               </div>
             </div>
 
@@ -68,14 +70,14 @@ function Sidebar() {
               {sidebarItems.map(({ icon, title, id }) => (
                 <div
                   key={id}
-                  className="flex items-center gap-x-2 text-sm text-[#919191]"
+                  className="flex items-center gap-x-2 text-sm text-[#919191] cursor-pointer hover:text-[#1a1b22]"
                 >
                   <div>{icon}</div>
                   <p className="">{title}</p>
                 </div>
               ))}
             </div>
-            <div className="logout flex items-center gap-x-4 absolute bottom-8 text-sm text-[#919191]">
+            <div className="logout flex items-center gap-x-4 absolute bottom-8 text-sm text-[#919191] hover:text-[#1a1b22]">
               <div className="">
                 <MdOutlineLogout />
               </div>

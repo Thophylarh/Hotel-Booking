@@ -51,10 +51,10 @@ function Dashboard({}: Props) {
               <Image
                 src={hotelHeroImg}
                 alt="Hotel-image"
-                className="rounded-lg w-full h-[300px] object-cover"
+                className="rounded-lg md:w-full md:h-[300px] w-[100%] h-[350px] object-cover"
               />
-              <div className="bg-[#ffffff] w-[80%] left-[10%] absolute -bottom-6 rounded-lg p-2">
-                <div className="flex items-center gap-x-12 px-4">
+              <div className="bg-[#ffffff] w-full md:w-[80%] left-0 md:left-[10%] absolute -bottom-6 md:rounded-lg p-2">
+                <div className="md:flex items-center md:gap-x-12 px-4 block ">
                   {selectData.map(
                     ({ id, title, icon, caretIcon, valueTwo }) => (
                       <div key={id} className="relative group">

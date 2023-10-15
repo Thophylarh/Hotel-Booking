@@ -70,9 +70,9 @@ const bestOfferData = [
 function BestOffer() {
   return (
     <div className="p-4">
-      <div className="flex items-center justify-between">
-        <h5>Best Offer</h5>
-        <p>View All</p>
+      <div className="flex items-center justify-between py-2">
+        <h5 className="text-[#1a1b22] text-xl font-medium">Best Offer</h5>
+        <p className="text-sm">View All</p>
       </div>
       <div className="grid sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-x-2">
         {bestOfferData.map(
@@ -97,16 +97,16 @@ function BestOffer() {
                   className=" absolute object-cover w-full h-full rounded-lg"
                 />
               </div>
-              <div>
-                <p>{title}</p>
+              <div className="space-y-1">
+                <p className="text-base font-medium pt-3"> {title}</p>
                 <div className="flex items-center gap-x-2">
                   <div className="text-[#919191]">{locationIcon}</div>
 
                   <p className=" text-[#919191] text-xs">{country}</p>
                 </div>
                 <div className="flex items-center justify-between">
-                  <p>
-                    {cost} <span className=" text-[#919191]">{duration}</span>
+                  <p className="text-sm font-medium">
+                    {cost} <span className=" text-[#919191] text-xs">{duration}</span>
                   </p>
                   <div className="border w-6 h-6 rounded-lg  text-[#919191] flex items-center justify-center">
                     {likeIcon}

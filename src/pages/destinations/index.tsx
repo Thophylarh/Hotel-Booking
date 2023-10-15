@@ -89,17 +89,21 @@ type Props = {};
 function Destinations({}: Props) {
   return (
     <div className="px-4">
-      <h3 className="text-[#1a1b22] text-xl font-medium">Trending destinations</h3>
-      <div className="swiper-container relative">
-        <div className="flex items-center gap-x-2 py-6 ">
-        <div className="swiper-button image-swiper-button-prev border w-6 h-6 rounded-md flex items-center justify-center text-[#919191] absolute right-10">
+
+      <div className="swiper-container ">
+        <div className="flex items-center justify-between py-2">
+        <h3 className="text-[#1a1b22] text-xl font-medium">Trending destinations</h3>
+        <div className="flex items-center gap-x-2  ">
+        <div className="swiper-button image-swiper-button-prev border w-6 h-6 rounded-md flex items-center justify-center text-[#919191] ">
           <MdKeyboardArrowLeft />
         </div>
-        <div className="swiper-button image-swiper-button-next border w-6 h-6 rounded-md flex items-center justify-center text-[#919191] absolute right-0 ">
+        <div className="swiper-button image-swiper-button-next border w-6 h-6 rounded-md flex items-center justify-center text-[#919191] ">
           <MdKeyboardArrowRight />
         </div>
        
         </div>
+        </div>
+       
        
         <Swiper
           modules={[A11y, Navigation]}
@@ -113,15 +117,15 @@ function Destinations({}: Props) {
           breakpoints={{
             640: {
               slidesPerView: 2,
-              spaceBetween: 20,
+              spaceBetween: 15,
             },
             768: {
               slidesPerView: 3,
-              spaceBetween: 30,
+              spaceBetween: 15,
             },
             1024: {
               slidesPerView: 5,
-              spaceBetween: 40,
+              spaceBetween: 15,
             },
           }}
         >
@@ -139,16 +143,16 @@ function Destinations({}: Props) {
                     </div>
                     <div className="flex flex-col justify-between">
                       <div className="flex items-center justify-between ">
-                        <h5>{location}</h5>
+                        <h5 className="font-semibold text-lg">{location}</h5>
                         <div className="gap-x-2 flex items-center">
                         <div className="text-[#f59f00]">{starIcon}</div>
-                        <p>{ratings}</p>
+                        <p className="text-xs">{ratings}</p>
                         </div>
                        
                       </div>
 
-                      <p className="text-xs">{content}</p>
-                      <p>{price}</p>
+                      <p className="text-xs text-[#919191]">{content}</p>
+                      <p className="text-sm font-medium">{price}</p>
                     </div>
                   </div>
                 </div>
