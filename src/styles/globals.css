@@ -19,6 +19,5 @@ body {
   .swiper-button:hover {
     background-color: #2b3051;
     color: white;
-    /* You can also change other styles like background-color if needed */
   }
 }

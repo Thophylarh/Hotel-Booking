@@ -22,9 +22,13 @@ function Navbar({}: Props) {
           </div>
         </div>
         <div className="flex items-center gap-x-6">
-          <p className="text-[#656974] font-semibold text-sm">Saturday, May 2023</p>
+          <p className="text-[#656974] font-semibold text-sm">
+            Saturday, May 2023
+          </p>
           <div className="relative">
-            <p className="w-4 h-4 bg-red-500 rounded-full flex items-center justify-center text-[#fff] text-xs absolute -top-2 -left-2">3</p>
+            <p className="w-4 h-4 bg-red-500 rounded-full flex items-center justify-center text-[#fff] text-xs absolute -top-2 -left-2">
+              3
+            </p>
             <div className="bg-[#efefef] w-8 h-8 flex items-center justify-center rounded-lg text-[#767b84]">
               <MdNotificationsNone size={24} />
             </div>
@@ -32,7 +36,6 @@ function Navbar({}: Props) {
         </div>
       </div>
 
-      {/* Conditional rendering for the hamburger menu icon on mobile screens */}
       <div className="md:hidden">
         <div className="flex justify-end">
           <MdMenu size={24} />
