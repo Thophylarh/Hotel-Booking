@@ -86,7 +86,7 @@ function Dashboard({}: Props) {
             <Destinations />
           </section>
           {/* section 2 */}
-          <section className="py-4">
+          <section className="py-2">
             <BestOffer />
           </section>
         </div>
