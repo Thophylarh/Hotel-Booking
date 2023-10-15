@@ -88,8 +88,8 @@ type Props = {};
 
 function Destinations({}: Props) {
   return (
-    <div className="p-4">
-      <h3>Trending destinations</h3>
+    <div className="px-4">
+      <h3 className="text-[#1a1b22] text-xl font-medium">Trending destinations</h3>
       <div className="swiper-container relative">
         <div className="flex items-center gap-x-2 py-6 ">
         <div className="swiper-button image-swiper-button-prev border w-6 h-6 rounded-md flex items-center justify-center text-[#919191] absolute right-10">
