@@ -66,7 +66,7 @@ function Sidebar() {
         </div>
         <div className="nav-content ">
           <div className="py-20">
-            <div className="space-y-5 ">
+            <div className="space-y-8 ">
               {sidebarItems.map(({ icon, title, id }) => (
                 <div
                   key={id}
