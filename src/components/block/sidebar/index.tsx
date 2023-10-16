@@ -41,7 +41,7 @@ const sidebarItems = [
 function Sidebar() {
   const router = useRouter();
   return (
-    <main className="max-h-screen lg:block relative bg-[#fff] min-w-[250px] py-4">
+    <main className="h-screen lg:block fixed left-0 top-0 z-50 bg-[#fff] min-w-[250px] py-4">
       <div className="logo  flex flex-col items-center  justify-between">
         <div className="">
           <div className="mx-auto flex flex-col items-center space-y-4">

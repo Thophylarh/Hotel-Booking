@@ -37,13 +37,12 @@ const selectData = [
 function Dashboard() {
   return (
     <div>
-      <div className="flex">
+      <div className="">
         <Sidebar />
-        <div className="dashboard-container w-10/12 ">
+        <div className=" w-10/12 relative  left-[16rem]">
           <div>
             <Navbar />
           </div>
-
           <section className="p-4">
             <div className=" relative">
               <Image
