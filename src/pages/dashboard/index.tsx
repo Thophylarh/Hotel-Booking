@@ -34,18 +34,16 @@ const selectData = [
   },
 ];
 
-type Props = {};
-
-function Dashboard({}: Props) {
+function Dashboard() {
   return (
-    <div className="">
+    <div>
       <div className="flex">
         <Sidebar />
         <div className="dashboard-container w-10/12 ">
           <div>
             <Navbar />
           </div>
-          {/* section 1 */}
+
           <section className="p-4">
             <div className=" relative">
               <Image
@@ -81,11 +79,11 @@ function Dashboard({}: Props) {
               </div>
             </div>
           </section>
-          {/* section 3 */}
+
           <section className="py-4">
             <Destinations />
           </section>
-          {/* section 2 */}
+
           <section className="pt-2">
             <BestOffer />
           </section>
