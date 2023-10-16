@@ -21,6 +21,6 @@ body {
     color: white;
   }
   .dashboard-container{
-    @apply bg-[#822121] ;
+    @apply bg-[#f9f9f9] max-h-full w-10/12 overflow-y-scroll;
   }
 }

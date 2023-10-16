@@ -41,7 +41,7 @@ function Dashboard({}: Props) {
     <div className="">
       <div className="flex">
         <Sidebar />
-        <div className="dashboard-container h-full w-10/12 ">
+        <div className="dashboard-container w-10/12 ">
           <div>
             <Navbar />
           </div>
@@ -53,7 +53,7 @@ function Dashboard({}: Props) {
                 alt="Hotel-image"
                 className="rounded-lg md:w-full md:h-[300px] w-[100%] h-[350px] object-cover"
               />
-              <div className="bg-[#ffffff] w-full md:w-[80%] left-0 md:left-[10%] absolute -bottom-6 md:rounded-lg p-2">
+              <div className="bg-[#ffffff] w-full md:w-[80%]  left-0 md:left-[10%] absolute -bottom-6 md:rounded-lg p-2">
                 <div className="md:flex items-center md:gap-x-12 px-4 block ">
                   {selectData.map(
                     ({ id, title, icon, caretIcon, valueTwo }) => (

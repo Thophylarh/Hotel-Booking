@@ -41,7 +41,7 @@ const sidebarItems = [
 function Sidebar() {
   const router = useRouter();
   return (
-    <main className="max-h-screen lg:block overflow-y-scroll bg-[#fff] min-w-[250px] py-4">
+    <main className="max-h-screen lg:block relative bg-[#fff] min-w-[250px] py-4">
       <div className="logo  flex flex-col items-center  justify-between">
         <div className="">
           <div className="mx-auto flex flex-col items-center space-y-4">
@@ -77,7 +77,7 @@ function Sidebar() {
                 </div>
               ))}
             </div>
-            <div className="logout flex items-center gap-x-4 absolute bottom- text-sm text-[#919191] hover:text-[#1a1b22] cursor-pointer">
+            <div className="logout flex items-center gap-x-4 absolute bottom-8 text-sm text-[#919191] hover:text-[#1a1b22] cursor-pointer">
               <div className="">
                 <MdOutlineLogout />
               </div>
